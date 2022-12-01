@@ -1,0 +1,314 @@
+:root {
+    /* Variables */
+    --dark: #020403;
+    --gray: #adadad;
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--dark);
+    font-family: 'Rubik', sans-serif;
+}
+
+@media screen and (min-width: 300px) {
+   /* Navbar */
+   .nav {
+       display: flex;
+       flex-direction: column;
+       align-items: flex-end;
+       top: 0;
+       width: 100%;
+       position: fixed;
+       background-color: var(--dark);
+   }
+
+   #nav-icon-bars {
+       border: none;
+       background-color: rgba(0, 0, 0, 0.1);
+       color: white;
+       font-size: 25px;
+       width: 50px;
+       height: 50px;
+       margin-right: 10px;
+       margin-top: 5px;
+       cursor: pointer;
+   }
+
+   .nav-dropdown {
+      background-color: var(--dark);
+      border: 1px solid white;
+      display: flex;
+      flex-direction: column;
+      width: 200px;
+      padding: 10px 10px 10px 20px;
+      gap: 1em;
+      margin-top: 55px;
+      position: fixed;
+      right: -200px;
+      transition: right 0.3s;
+   }
+
+   .nav-dropdown-visible {
+       right: 20px;
+       transition: right 0.3s 0.3x;
+   }
+
+   .dropdown-link {
+       text-decoration: none;
+       color: white;
+   }
+
+   /* Perfil photo */
+   #perfil-photo {
+       margin-top: 80px;
+       margin-bottom: 10px;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       gap: 1em;
+   }
+
+   #perfil-photo > img {
+       width: 250px;
+       border-radius: 38%;
+   }
+
+   #perfil-photo > figcaption {
+       color: var(--gray);
+       font-size: 25px;
+       font-weight: 400; /* medium */
+   }
+
+   #perfil-photo figcaption span {
+
+   }
+
+   /* Title */
+   #title > h1{
+	text-align: center;
+	display: block;
+        color: white;
+	font-size: 40px;
+	font-weight: 600; /* semibold */
+    }
+
+    /* Menu icons */
+    .menu-icons {
+	margin-top: 20px;
+	margin-bottom: 40px;
+        display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 2em;
+    }
+
+    .menu-icons li a i {
+        font-size: 40px;
+    }
+
+    /* About me */
+    .about-me {
+	width: 70%;
+        margin: 80px auto 80px auto;
+    }
+
+    .about-me-title {
+	font-size:25px;
+	font-weight: 400; 
+        color: white;
+	text-align: center;
+	margin-bottom: 40px;
+    }
+
+    #biography {
+        color: var(--gray);
+	text-align: center;
+    }
+
+    /* Habilities */
+    .menu-habilities, .menu-habilities li figure {
+        display: flex;
+	flex-direction: column;
+	align-items: center;
+    }
+    
+    .circle {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+        width: 80px;
+	height: 80px;
+	background-color: var(--gray);
+	border-radius: 50%;
+    }
+
+    .legend-figure {
+       color: white;
+       margin-top:10px;
+       margin-bottom: 80px;
+       width: 180px;
+       text-align: center;
+       font-size: 18px;
+       font-weight: 200;
+    }
+
+    .menu-habilities li:nth-child(4) figure figcaption {
+        margin-bottom: 0;
+    }
+
+    .about-me-item {
+        display: flex;
+    }
+
+    .about-me-item p {
+        color: var(--gray);
+	width: 150px;
+	margin: 20px 0;
+    }
+
+    .about-me-item p strong {
+        color: white;
+    }
+
+    .about-me-item p span {
+        display: block;
+    }
+
+    .about-me-item hr {
+        color: white;
+    }
+
+    /* Portfolio */
+    .portfolio {
+        display: flex;
+	flex-direction: column;
+	align-items: center;
+    }
+
+    .portfolio-title {
+        font-size: 25px;
+	font-weight: 400;
+	color: white;
+	text-align: center;
+    }
+
+    .portfolio li figure {
+        margin: 20px 0;
+    }
+
+    /* Footer */
+    .figure-footer {
+        display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 2em;
+	margin: 20px auto;
+    }
+
+    .figure-footer figure {
+        display: flex;
+	flex-direction: column;
+	align-items: center;;
+    }
+
+    .circle-outline {
+        display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 80px;
+	height: 80px;
+	color: var(--gray);
+	border: 1px solid white;
+	border-radius: 50%;
+    }
+
+    .figure-footer figure figcaption {
+        color: var(--gray);
+	text-align: center;
+	font-size: 16px;
+	font-weight: 200;
+	margin-top: 10px;
+    }
+
+    .figure-footer figure figcaption span {
+        display: block;
+	font-size: 12px;
+	margin-top: 10px;
+    }
+
+    footer p {
+        color: var(--gray);
+	text-align: center;
+	margin: 70px 50px 50px 50px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    /* Navbar */
+    #nav-icon-bars {
+        display: none;
+    }
+
+    .nav-dropdown {
+	position: static;
+	width: 100vw;
+	justify-content: flex-end;
+        flex-direction: row;
+	margin-top: 0;
+	padding: 20px 10px 20px 0;
+	border: none;
+    }
+
+    .nav-dropdown li {
+        margin: 0 10px;
+    }
+
+    /* Habilities */
+    #about-me-habilities {
+        display: flex;
+	flex-direction: column;
+	align-items: center;
+    }
+
+    .menu-habilities {
+        flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	width: 520px;
+    }
+
+    #menu-habilities li:nth-child(odd) {
+        margin-right: 50px;
+    }
+
+    #menu-habilities li:nth-child(even) {
+        margin-left: 50px;
+    }
+
+    .menu-habilities li:nth-child(4) figure figcaption {
+        margin-bottom: 100px;
+    }
+
+    .about-me-item p {
+        margin-right: 20%;
+    }
+
+    .portfolio {
+        flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 2em;
+    }
+
+    .portfolio li figure {
+        margin: 1em 0;
+    }
+}

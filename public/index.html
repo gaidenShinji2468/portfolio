@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>Portafolio</title>
+	<link rel="stylesheet" href="assets/styles/styles.css"/>
+
+	<!-- Google fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap" rel="stylesheet"/>
+
+	<!-- Fontawesome icons -->
+        <script src="https://kit.fontawesome.com/93595c8f3a.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+	<header>
+             <nav class="nav">
+                 <button id="nav-icon-bars">
+                     <i class="fa-solid fa-bars"></i> 
+		 </button>
+	         <ul class="nav-dropdown">
+		     <li class="dropdown-item"><a class="dropdown-link" href="#">Home</a></li>
+		     <li class="dropdown-item"><a class="dropdown-link" href="#about-me">Acerca de mí</a></li>
+		     <li class="dropdown-item"><a class="dropdown-link" href="#habilities">Mis habilidades</a></li>
+	             <li class="dropdown-item"><a class="dropdown-link" href="#experience">Experiencia</a></li>
+		     <li class="dropdown-item"><a class="dropdown-link" href="#portfolio">Portafolio</a></li>
+		     <li class="dropdown-item"><a class="dropdown-link" href="#contact">Contacto</a></li>
+	         </ul>
+	    </nav>
+	</header>
+	<main>
+	     <!-- Perfil -->
+             <section>
+                 <figure id="perfil-photo">
+		     <img src="assets/img/perfil_photo.jpg" alt="This is perfil photo"/>
+		     <figcaption>
+                         Hola, soy <span>Romel</span>
+		     </figcaption>
+		 </figure>
+		 <div id="title">
+                     <h1>Desarrollador Web Fullstack</h1>
+		 </div>
+		 <ul class="menu-icons">
+	             <li>
+			 <a class="dropdown-link icons-items" href="#">
+			     <i class="fa-brands fa-linkedin"></i>
+			 </a>
+		     </li>
+		     <li>
+			 <a class="dropdown-link icons-items" href="#">
+			     <i class="fa-brands fa-facebook"></i>
+			 </a>
+		     </li>
+		     <li>
+			 <a class="dropdown-link icons-items" href="#">
+			     <i class="fa-brands fa-github"></i>
+			 </a>
+			 <span id="about-me"></span>
+		     </li>
+		 </ul>
+	     </section>
+	     <!-- About Me -->
+	     <section>
+		 <section class="about-me">
+		     <h2 class="about-me-title">Acerca de mí</h2>
+		     <p id="biography">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas quis magna eget erat ullamcorper porta. Donec auctor metus sed pellentesque porttitor. Curabitur a mollis nisi. Nunc egestas imperdiet commodo. Quisque non felis sed justo pulvinar ornare quis suscipit lorem. Fusce consectetur arcu sit amet faucibus fermentum.
+		<span id="habilities"></span></p>
+		 </section>
+		 <section id="about-me-habilities" class="about-me">
+                     <h2 class="about-me-title">Mis Habilidades</h2>
+                     <ul id="menu-habilities" class="menu-habilities">
+                         <li>
+			     <figure>
+				 <div class="circle">
+				     <img src="assets/svg/mobile.svg" alt="Mobile app design"/>
+				 </div>
+				 <figcaption class="legend-figure">
+				     Diseño de Aplicaciones Moviles
+				 </figcaption>
+			     </figure>
+			 </li>
+			 <li>
+			     <figure>
+				 <div class="circle">
+				     <img src="assets/svg/motion.svg" alt="Motion design"/>
+				 </div>
+                                 <figcaption class="legend-figure">
+				     Diseño de Animaciones
+				 </figcaption>
+			     </figure>
+			 </li>
+			 <li>
+			     <figure>
+				 <div class="circle">
+				     <img src="assets/svg/material.svg" alt="Design systems"/>
+				 </div>
+                                 <figcaption class="legend-figure">
+				     Creación de Sistemas de Diseño
+				 </figcaption>
+			     </figure>
+			 </li>
+			 <li>
+                             <figure>
+				 <div class="circle">
+				     <img src="assets/svg/web.svg" alt="Web development"/>
+				 </div>
+                                 <figcaption class="legend-figure">
+                                     Desarrollo Web
+				 </figcaption>
+			     </figure>
+			     <span id="experience"></span>
+			 </li>
+		     </ul>
+		 </section>
+		 <section class="about-me">
+                     <h2 class="about-me-title">Experiencia</h2>
+		     <ul>
+                         <li class="about-me-item">
+		             <p>2016-2018</p>
+			     <p><strong>Visual Designer</strong> Wizeline</p>
+			 </li>
+			 <hr/>
+			 <li class="about-me-item">
+			     <p>2018-2019</p>
+			     <p><strong>Product Designer</strong> Microsoft</p>
+			 </li>
+			 <hr/>
+			 <li class="about-me-item">
+                             <p>2019-2021</p>
+			     <p><strong>UI Engineer</strong> <span>Google</span></p>
+			 </li>
+			 <span id="portfolio"></span>
+		     </ul>
+		 </section>
+	     </section>
+	     <!-- Portfolio -->
+	     <section>
+		 <h2 class="portfolio-title">Portafolio</h2>
+		 <ul class="portfolio">
+		     <li>
+		         <figure>
+                             <img src="assets/img/ejemplo_1.png" alt="Sample 1"/>
+		         </figure>
+		     </li>
+		     <li>
+		         <figure>
+                             <img src="assets/img/ejemplo_2.png" alt="Sample 2"/>
+		         </figure>
+		     </li>
+		     <li>
+		         <figure>
+                             <img src="assets/img/ejemplo_3.png" alt="Sample 3"/>
+		         </figure>
+		     </li>
+		 </ul>
+	     </section>
+	</main>
+	<br/>
+	<footer>
+	    <span id="contact"></span>
+            <h2 class="portfolio-title">Contacto</h2>
+	    <div class="figure-footer">
+                <figure>
+		    <div class="circle-outline">
+                        <img src="assets/svg/phone.svg" alt="Phone Number"/>
+		    </div>
+		    <figcaption>
+			<strong>Número celular</strong><span>+58-412-032-5803</span>
+		    </figcaption>
+		</figure>
+		<figure>
+		    <div class="circle-outline">
+                        <img src="assets/svg/mail.svg" alt="E-mail"/>
+		    </div>
+		    <figcaption>
+			<strong>Email</strong><span>gaidenshinji2468@gmail.com</span>
+		    </figcaption>
+		</figure>
+	    </div>
+	    <p>Hecho con &#10084; en Academlo</p>
+	</footer>
+    </body>
+    <script src="js/main.js"></script>
+</html>
