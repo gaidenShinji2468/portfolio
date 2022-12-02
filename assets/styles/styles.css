@@ -76,7 +76,7 @@ body {
 
    #perfil-photo > img {
        width: 250px;
-       border-radius: 38%;
+       /* border-radius: 38%; */
    }
 
    #perfil-photo > figcaption {
