@@ -1,0 +1,92 @@
+.fade {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+@media screen and (min-width: 300px) {
+    .modal-dialog {
+	max-width: 100%;
+	height: 100%;
+        display: flex;
+	justify-content: center;
+	align-items: center;
+    }
+
+    .star-modal .modal-content {
+        background-color: transparent;
+    }
+
+    .modal-content .modal-body {
+	height: 450px;
+	overflow-y: scroll;
+    }
+
+    .star-modal .btn-group {
+        margin: 0 auto;
+    }
+
+    .star-modal button {
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    
+}
+
+@media screen and (min-width: 1000px) {
+
+}
+
+/*#space-modal {
+    width: 700px;
+    height: 500px;
+    border: 1px solid red;
+}
+
+.node-modal .modal-content {
+    background-color: transparent;
+}
+
+.node-modal .modal-header {
+    border: none;
+    margin: 0 auto;
+}
+
+#halo {
+    width: 516px;
+    height: 516px;
+    border: 1px solid white;
+    border-radius: 50%;
+    border-color: white transparent white transparent;
+    position: relative;
+    top: -507px;
+    left: -7px;
+    animation: halo 5s linear infinite;
+}
+
+@keyframes halo {
+    from {
+        transform: rotate(360deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+.node-modal .modal-body {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.node-modal .modal-footer {
+    border: none;
+    margin: 0 auto;
+    position: relative;
+    top: -500px;
+}*/

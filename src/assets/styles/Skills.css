@@ -1,0 +1,107 @@
+@media screen and (min-width: 300px) {
+    ul#skills {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+	align-items: center;
+    }
+
+    .skill figure {
+        width: 200px;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .skill figure img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .skill figure figcaption {
+	width: 180px;
+	text-align: center;
+        color: white;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+}
+
+@media screen and (min-width: 1000px) {
+
+}
+
+#movil-app:hover, #movil-app:focus {
+    animation: wave 3s ease-in-out infinite;
+}
+
+#animations:hover, #animations:focus {
+    animation: shake 3s ease-out infinite;
+}
+
+#design-sys:hover, #design-sys:focus {
+    animation: scroll-x 2s ease-out infinite;
+}
+
+@keyframes wave {
+    0% {
+        transform: scale(0.9, 0.9);
+    }
+
+    50% {
+        transform: scale(1.2, 1.2);
+    }
+ 
+    100% {
+        transform: scale(0.9, 0.9);
+    }
+}
+
+@keyframes shake {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(20deg);
+    }
+
+    50% {
+        transform: rotate(0deg);
+    }
+
+    75% {
+        transform: rotate(-20deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes scroll-x {
+    0% {
+        transform: translate(0);
+    }
+
+    25% {
+        transform: translate(15px, 0);
+    }
+
+    50% {
+        transform: translate(0);
+    }
+
+    75% {
+        transform: translate(-15px, 0);
+    }
+
+    100% {
+        transform: translate(0);
+    }
+}

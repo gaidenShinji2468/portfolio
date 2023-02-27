@@ -1,0 +1,86 @@
+#corvus {
+    height: 650px; 
+}
+
+.link {
+    display: block;
+    height: 1px;
+    background-color: white;
+    position: relative;
+}
+
+@media screen and (min-width: 300px) {
+    #corvus {
+        width: 350px;	
+        height: 650px;
+    }
+
+    #about-me {
+        top: 5px;
+	left: 5px;
+    }
+
+    #about-me-to-skills {
+        width: 120px;
+	top: -285px;
+	left: 45px;
+	transform: rotate(35deg);
+    }
+
+    #about-me-to-experience {
+        width: 440px;
+	top: -90px;
+	left: -150px;
+	transform: rotate(85deg);
+    }
+
+    #skills {
+        top: 0px;
+	left: 110px;
+    }
+
+    #skills-to-portfolio {
+        width: 295px;
+	top: -120px;
+	left: 65px;
+	transform: rotate(68deg);
+    }
+
+    #experience {
+        top: 330px;
+	left: 40px;
+    }
+
+    #experience-to-portfolio {
+        width: 195px;
+	top: 75px;
+	left: 88px;
+	transform: rotate(328deg);
+    }
+
+    #portfolio {
+        top: 150px;
+	left: 220px;
+    }
+
+    #portfolio-to-contact-me {
+        width: 200px;
+	top: 115px;
+	left: 183px;
+	transform: rotate(81deg);
+    }
+
+    #contact-me {
+        top: 275px;
+	left: 250px;
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+
+}
+
+@media screen and (min-width: 1000px) {
+
+}

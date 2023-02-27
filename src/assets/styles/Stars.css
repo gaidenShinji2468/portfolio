@@ -1,0 +1,15 @@
+#stars {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.interstellar-star {
+    display: block;
+    width: 15px;
+    height: 15px;
+    position: relative;
+    border-radius: 50%;
+}
