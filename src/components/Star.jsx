@@ -21,7 +21,7 @@ function Star({
 	            <div
 	                className="star-core"
 	                style={{
-                            background: `radial-gradient(closest-side, white 15%, ${color}, var(--bs-body-bg) 90%)`
+                            background: `radial-gradient(closest-side, white 15%, ${color} 30%, var(--bs-body-bg) 80%)`
 			}}
 	            ></div>
 	        </div>

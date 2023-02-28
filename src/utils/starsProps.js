@@ -47,7 +47,7 @@ export default function starsProps(width, height, count)
 	    height: `${size}px`,
             left: xDistribution[i],
 	    top: yDistribution[i],
-	    background: `radial-gradient(closest-side, white 15%, ${color}, var(--bs-body-bg) 60%)`
+	    background: `radial-gradient(closest-side, white 13%, ${color} 30%, var(--bs-body-bg) 80%)`
 	};
     }
     localStorage.clear();

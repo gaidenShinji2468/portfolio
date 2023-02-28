@@ -4,11 +4,13 @@
         display: flex;
         flex-direction: column;
 	align-items: center;
+        justify-content: center;
+	padding: 0 !important;
     }
 
     .skill figure {
-        width: 200px;
-        height: 200px;
+        width: 260px;
+        height: 260px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -36,16 +38,58 @@
 
 }
 
-#movil-app:hover, #movil-app:focus {
+#movil-app, #animations, #design-sys, #web-app {
+    animation: idle .2s ease-in-out infinite;
+}
+
+#movil-app:hover {
+    border: 1px solid #4872d2;
+    border-radius: 50%;
+    background: radial-gradient(closest-side, var(--bs-body-bg) 60%, #4872d2 95%, #4872d2);
     animation: wave 3s ease-in-out infinite;
 }
 
-#animations:hover, #animations:focus {
+#animations:hover {
+    border: 1px solid #f46ad6;
+    border-radius: 50%;
+    background: radial-gradient(closest-side, var(--bs-body-bg) 60%, #f46ad6 95%, #f46ad6);
     animation: shake 3s ease-out infinite;
 }
 
-#design-sys:hover, #design-sys:focus {
-    animation: scroll-x 2s ease-out infinite;
+#design-sys:hover {
+    border: 1px solid #ff4f4f;
+    border-radius: 50%;
+    background: radial-gradient(closest-side, var(--bs-body-bg) 60%, #ff4f4f 95%, #ff4f4f);
+    animation: scroll-x 1.2s ease-out infinite;
+}
+
+#web-app:hover {
+    border: 1px solid #fbfe2e;
+    border-radius: 50%;
+    background: radial-gradient(closest-side, var(--bs-body-bg) 60%, #fbfe2e 95%, #fbfe2e);
+    animation: scroll-y 1.2s ease-out infinite;
+}
+
+@keyframes idle {
+    0% {
+        transform: rotate(0);
+    }
+
+    25% {
+        transform: rotate(2deg);
+    }
+
+    50% {
+        transform: rotate(0)
+    }
+
+    75% {
+        transform: rotate(-2deg);
+    }
+
+    100% {
+        transform: rotate(0);
+    }
 }
 
 @keyframes wave {
@@ -90,7 +134,7 @@
     }
 
     25% {
-        transform: translate(15px, 0);
+        transform: translate(20px, 0);
     }
 
     50% {
@@ -98,7 +142,29 @@
     }
 
     75% {
-        transform: translate(-15px, 0);
+        transform: translate(-20px, 0);
+    }
+
+    100% {
+        transform: translate(0);
+    }
+}
+
+@keyframes scroll-y {
+    0% {
+        transform: translate(0);
+    }
+
+    25% {
+        transform: translate(0, 20px);
+    }
+
+    50% {
+	transform: translate(0);    
+    } 
+
+    75% {
+        transform: translate(0, -20px);
     }
 
     100% {

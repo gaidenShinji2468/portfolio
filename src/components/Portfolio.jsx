@@ -1,4 +1,8 @@
 import "/src/assets/styles/Portfolio.css";
+import {
+    Github,
+    Display
+} from "react-bootstrap-icons";
 
 function Portfolio()
 {
@@ -45,8 +49,19 @@ function Portfolio()
             {
                 portfolio.map((app, index) => {
                     return (
-                        <li key={index} className="app">
-
+                        <li key={index} id={app.id} className="app">
+			    <ul>
+			        <li>
+                                    <figure>
+			                <img type="image/png" src={app.thumbnail} alt={`This is a ${app.thumbnail} image`}/>
+			                <figcaption>{app.title}</figcaption>
+			            </figure>
+			        </li>
+			        <li>
+			            <a href={app.url}><Display/></a>
+			            <a href={app.git}><Github/></a>
+			        </li>
+			    </ul>
 			</li>
 		    );
 		})

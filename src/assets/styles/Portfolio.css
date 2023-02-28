@@ -1,0 +1,58 @@
+.app ul li:nth-child(2) svg {
+    color: white;
+}
+
+@media screen and (min-width: 300px) {
+    ul#portfolio {
+        padding: 0 !important;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 10px;
+    }
+
+    ul#portfolio ul {
+        padding: 0 !important;
+	width: 250px;
+	height: 300px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+    }
+
+    .app figure {
+
+    }
+
+    .app figure img {
+        width: 180px;
+	height: 180px;
+	border-radius: 50%;
+    }
+
+    .app figure figcaption {
+        color: white;
+	text-align: center;
+    }
+
+    .app ul li:nth-child(2) {
+	width: 30%;
+        display: flex;
+	justify-content: space-between;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+}
+
+@media screen and (min-width: 1000px) {
+
+}
+
+ul#portfolio ul:hover {
+    border: 1px solid white;
+    border-radius: 10px;
+    transform: scale(1.1, 1.1);
+}
