@@ -1,0 +1,66 @@
+@media screen and (min-width: 300px) {
+    ul#experience {
+	display: flex;
+	flex-direction: column;
+        padding: 0;
+	gap: 20px;
+    }
+
+    .job {
+	padding: 10px;
+        display: flex;
+	justify-content: space-between;
+	align-items: start;
+	gap: 10px;
+	border-radius: 20px;
+	border: 1px solid white;
+    }
+
+    .job:hover {
+	animation: changeColor 2s linear 1;
+    }
+
+    .job svg {
+        margin-top: 13px;
+    }
+
+    .job h3 {
+        color: inherit;
+    }
+
+    .job h4 {
+        color: var(--bs-gray);
+    }
+
+    .job span {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+}
+
+@media screen and (min-width: 1000px) {
+
+}
+
+@keyframes changeColor {
+    0% {
+        background-color: transparent;
+	border-color: white;
+	color: inherit;
+    }
+
+    50% {
+        background-color: white;
+	border-color: transparent;
+	color: var(--bs-body-bg);
+    }
+
+    100% {
+        background-color: transparent;
+	border-color: white;
+	color: inherit;
+    }
+}

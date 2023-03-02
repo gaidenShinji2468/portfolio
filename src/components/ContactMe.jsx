@@ -1,8 +1,50 @@
+import {useState} from "react";
+import {
+    Whatsapp,
+    Linkedin,
+    EnvelopeAtFill
+} from "react-bootstrap-icons";
+import "/src/assets/styles/ContactMe.css";
+
 function ContactMe()
 {
+    const [content, fillContent] = useState("");
+    const socialNetworks = [
+	{
+            id: "gmail",
+	    icon: <EnvelopeAtFill/>,
+	    content: "gaidenshinji2468@gmail.com"
+	},
+	{
+            id: "whatsapp",
+	    icon: <Whatsapp/>,
+	    content: "+58 412 032 5803"
+	},
+	{
+            id: "linkedin",
+	    icon: <Linkedin/>,
+	    content: "https://www.linkedin.com/in/romel-gil-4b1370213"        }
+    ];
+
     return (
-        <>
-	    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec massa lectus, imperdiet nec dolor ut, pharetra dapibus lorem. Nam vel metus vel felis sodales rhoncus ac eget odio. Vestibulum bibendum vulputate posuere. Nunc in purus ipsum. Etiam imperdiet eros id purus fringilla luctus. Aenean cursus nisl quis arcu ullamcorper cursus. In hac habitasse platea dictumst. Nam ultricies nisl molestie, elementum ipsum sed, varius nibh. Aenean in fermentum sapien. Nam hendrerit felis eu augue commodo, ac sodales lectus sollicitudin. Nunc imperdiet est eu orci laoreet, in egestas est facilisis. Donec accumsan urna et augue facilisis finibus. Proin eget elit et diam mollis viverra nec non libero. Sed ultrices hendrerit augue. Quisque a mollis purus, in dictum arcu. In hac habitasse platea dictumst. Mauris ornare, dui et tincidunt congue, tortor mi efficitur elit, a porta eros lectus et nisl. Phasellus in elit vel lacus viverra tincidunt.</p>
+	<>
+            <ul id="contact-me">
+	        {
+                    socialNetworks.map((social, index) => {
+                        return (
+			    <li 
+			        key={index}
+			        id={social.id}
+			        className="social"
+			        onClick={() => fillContent(social.content)}
+			    >
+                                <span className="social-halo">{social.icon}</span>
+			    </li>
+		        );
+		    })
+	        }
+	    </ul>
+	    <span>{content}</span>
 	</>
     );
 }

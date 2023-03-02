@@ -5,13 +5,13 @@ import {
 import "/src/assets/styles/Loader.css";
 
 function Loader()
-{
+{ 
     const [isReady, setIsReady] = useState(true);
-
+ 
     useEffect(() => {
         setTimeout(() => {
             setIsReady(false);
-	}, 4000);
+	}, 2600);
     }, []);
 
     return (
@@ -21,6 +21,7 @@ function Loader()
 	            <span id="halo">
 		        <span id="core"></span>
 		    </span>
+		    <span id="loader-title">GSH... Devs ;)</span>
 	        </div>
 	    }
 	</>

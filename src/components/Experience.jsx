@@ -1,9 +1,35 @@
+import {JournalCode} from "react-bootstrap-icons";
+import "/src/assets/styles/Experience.css";
+
 function Experience()
 {
+    const jobs = [
+	{
+            id: "lacour",
+	    position: "Desarrollador en jefe",
+	    company: "Lacour C.A.",
+	    from: "2022",
+	    until: "2023"
+	}
+    ];
+
     return (
-        <>
-	    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec massa lectus, imperdiet nec dolor ut, pharetra dapibus lorem. Nam vel metus vel felis sodales rhoncus ac eget odio. Vestibulum bibendum vulputate posuere. Nunc in purus ipsum. Etiam imperdiet eros id purus fringilla luctus. Aenean cursus nisl quis arcu ullamcorper cursus. In hac habitasse platea dictumst. Nam ultricies nisl molestie, elementum ipsum sed, varius nibh. Aenean in fermentum sapien. Nam hendrerit felis eu augue commodo, ac sodales lectus sollicitudin. Nunc imperdiet est eu orci laoreet, in egestas est facilisis. Donec accumsan urna et augue facilisis finibus. Proin eget elit et diam mollis viverra nec non libero. Sed ultrices hendrerit augue. Quisque a mollis purus, in dictum arcu. In hac habitasse platea dictumst. Mauris ornare, dui et tincidunt congue, tortor mi efficitur elit, a porta eros lectus et nisl. Phasellus in elit vel lacus viverra tincidunt.</p>
-	</>
+        <ul id="experience">
+	    {
+                jobs.map((job, index) => {
+                    return (
+                        <li key={index} className="job">
+			    <JournalCode size="88"/>
+			    <div>
+                                <h3>{job.position}</h3>
+			        <h4>{job.company}</h4>
+			    </div>
+			    <span>{`${job.from}-${job.until}`}</span>
+			</li>
+		    );
+		})
+	    }
+	</ul>
     );
 }
 
