@@ -4,7 +4,7 @@
 
 @media screen and (min-width: 300px) {
     .modal-dialog {
-	max-width: 100%;
+	max-width: 100% !important;
 	height: 100%;
         display: flex;
 	justify-content: center;
@@ -22,6 +22,7 @@
 
     .star-modal .btn-group {
         margin: 0 auto;
+	z-index: 3;
     }
 
     .star-modal button {
@@ -30,63 +31,28 @@
 }
 
 @media screen and (min-width: 768px) {
-    
-}
-
-@media screen and (min-width: 1000px) {
-
-}
-
-/*#space-modal {
-    width: 700px;
-    height: 500px;
-    border: 1px solid red;
-}
-
-.node-modal .modal-content {
-    background-color: transparent;
-}
-
-.node-modal .modal-header {
-    border: none;
-    margin: 0 auto;
-}
-
-#halo {
-    width: 516px;
-    height: 516px;
-    border: 1px solid white;
-    border-radius: 50%;
-    border-color: white transparent white transparent;
-    position: relative;
-    top: -507px;
-    left: -7px;
-    animation: halo 5s linear infinite;
-}
-
-@keyframes halo {
-    from {
-        transform: rotate(360deg);
+    .modal-dialog { 
+	margin 0 !important;
     }
 
-    to {
-        transform: rotate(0deg);
+    .modal-dialog .modal-content {
+	height: 90% !important;
+    }
+
+    .modal-content .space-modal {
+	height: 100% !important;
+        display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+    } 
+
+    .modal-content .modal-body {
+	display: flex;
+	align-items: center;
+        overflow-y: visible;
+    }
+
+    #contact-me-modal .modal-content .modal-body {
+        display: block;
     }
 }
-
-.node-modal .modal-body {
-    width: 500px;
-    height: 500px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.node-modal .modal-footer {
-    border: none;
-    margin: 0 auto;
-    position: relative;
-    top: -500px;
-}*/

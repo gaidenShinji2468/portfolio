@@ -29,16 +29,6 @@
     animation: halo-rotate 5s linear infinite;
 }
 
-@keyframes halo-rotate {
-    from {
-       transform: rotate(0deg);
-    }
-
-    to {
-       transform: rotate(360deg);
-    }
-}
-
 .star-core {
     width: 25px;
     height: 25px;
@@ -51,6 +41,12 @@
     height: 35px;
     margin: 5px;
     animation: star-target 2s linear infinite;
+}
+
+@media screen and (min-width: 768px) {
+    .star-base {
+        transform: rotate(45deg);
+    }
 }
 
 @keyframes star-halo {
@@ -74,5 +70,15 @@
 
     100% { 
        background: radial-gradient(closest-side, white 60%, var(--bs-body-bg));
+    }
+}
+
+@keyframes halo-rotate {
+    from {
+       transform: rotate(0deg);
+    }
+
+    to {
+       transform: rotate(360deg);
     }
 }

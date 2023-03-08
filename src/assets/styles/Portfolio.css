@@ -4,6 +4,7 @@
 
 @media screen and (min-width: 300px) {
     ul#portfolio {
+	width: 100%;
         padding: 0 !important;
 	display: flex;
 	flex-direction: column;
@@ -44,11 +45,10 @@
 }
 
 @media screen and (min-width: 768px) {
-
-}
-
-@media screen and (min-width: 1000px) {
-
+    ul#portfolio {
+        flex-direction: row;
+	flex-wrap: wrap;
+    }   
 }
 
 ul#portfolio ul:hover {

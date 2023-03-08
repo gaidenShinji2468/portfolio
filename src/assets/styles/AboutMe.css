@@ -1,1 +1,10 @@
+@media screen and (min-width: 768px) {
+    p#about-me {
+        padding: 20px;
+	text-align: center;
+    } 
+}
 
+@media screen and (min-width: 1000px) {
+
+}

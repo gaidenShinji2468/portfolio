@@ -39,15 +39,15 @@ export default function starsProps(width, height, count)
     {
         const size = getRandomInt(5, 25);
 	const color = colors[getRandomInt(0, colors.length)];
-	const xDistribution = getDistribution(width, 3, count, 5);
-	const yDistribution = getDistribution(height, 3, count, 5);
+	const xDistribution = getDistribution(width, 3, count, 7);
+	const yDistribution = getDistribution(height, 3, count, 7);
 
 	props[i] = {
             width: `${size}px`,
 	    height: `${size}px`,
             left: xDistribution[i],
 	    top: yDistribution[i],
-	    background: `radial-gradient(closest-side, white 13%, ${color} 30%, var(--bs-body-bg) 80%)`
+	    background: `radial-gradient(closest-side, white 5%, ${color} 10%, var(--bs-body-bg) 70%)`
 	};
     }
     localStorage.clear();

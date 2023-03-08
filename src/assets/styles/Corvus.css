@@ -78,7 +78,29 @@
 }
 
 @media screen and (min-width: 768px) {
+    #corvus {
+        transform: rotate(-45deg);
+    }
 
+    #about-me {
+        top: 6px;
+	left: 9px;
+    }
+
+    #portfolio {
+        top: 145px;
+	left: 210px;
+    }
+
+    #experience {
+        top: 325px;/*330*/
+	left: 35px;/*40*/
+    }
+
+    #contact-me {
+        top: 275px;/*275*/
+	left: 243px;/*250*/
+    }
 }
 
 @media screen and (min-width: 1000px) {

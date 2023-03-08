@@ -28,18 +28,16 @@
 	text-align: center;
         color: white;
     }
+
+    #movil-app, #animations, #design-sys, #web-app {
+        animation: idle .2s ease-in-out infinite;
+    }
 }
 
 @media screen and (min-width: 768px) {
-
-}
-
-@media screen and (min-width: 1000px) {
-
-}
-
-#movil-app, #animations, #design-sys, #web-app {
-    animation: idle .2s ease-in-out infinite;
+    ul#skills {
+	flex-direction: row;
+    }
 }
 
 #movil-app:hover {
