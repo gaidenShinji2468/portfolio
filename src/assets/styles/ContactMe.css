@@ -1,3 +1,7 @@
+ul#contact-me {
+    font-family: sans-serif !important;
+}
+
 @media screen and (min-width: 300px) {
     ul#contact-me {
 	width: 100%;
@@ -30,15 +34,12 @@
     ul#contact-me + span {
         display: block;
 	text-align: center;
+	font-family: sans-serif !important;
 	font-size: 16px;
 	position: relative;
 	top: -130px;
 	color: white;
     }
-}
-
-@media screen and (min-width: 768px) {
-
 }
 
 @keyframes halo {
