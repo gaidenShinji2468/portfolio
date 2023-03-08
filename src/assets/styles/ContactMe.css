@@ -31,7 +31,7 @@ ul#contact-me {
 	animation: halo 1.5s ease infinite;
     }
 
-    ul#contact-me + span {
+    .social-content {
         display: block;
 	text-align: center;
 	font-family: sans-serif !important;
