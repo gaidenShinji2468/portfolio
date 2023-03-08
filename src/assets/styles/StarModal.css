@@ -26,7 +26,7 @@
     }
 
     .star-modal button {
-        font-size: 14px;
+        font-size: 12px;
     }
 }
 
@@ -54,5 +54,9 @@
 
     #contact-me-modal .modal-content .modal-body {
         display: block;
+    }
+
+    .star-modal button {
+        font-size: 14px;
     }
 }

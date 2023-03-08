@@ -16,7 +16,7 @@
     }
 
     #about-me {
-        top: 5px;
+        top: -10px;
 	left: 5px;
     }
 
@@ -35,8 +35,8 @@
     }
 
     #skills {
-        top: 0px;
-	left: 110px;
+        top: -11px;
+	left: 107px;
     }
 
     #skills-to-portfolio {
@@ -47,7 +47,7 @@
     }
 
     #experience {
-        top: 330px;
+        top: 316px;
 	left: 40px;
     }
 
@@ -59,8 +59,8 @@
     }
 
     #portfolio {
-        top: 150px;
-	left: 220px;
+        top: 136px;
+	left: 218px;
     }
 
     #portfolio-to-contact-me {
@@ -83,26 +83,27 @@
     }
 
     #about-me {
-        top: 6px;
+        top: -10px;
 	left: 9px;
     }
 
+    #skills {
+        top: -11px;
+	left: 115px;
+    }
+
     #portfolio {
-        top: 145px;
-	left: 210px;
+        top: 138px;
+	left: 212px;
     }
 
     #experience {
-        top: 325px;/*330*/
-	left: 35px;/*40*/
+        top: 315px;
+	left: 35px;
     }
 
     #contact-me {
         top: 275px;/*275*/
 	left: 243px;/*250*/
     }
-}
-
-@media screen and (min-width: 1000px) {
-
 }

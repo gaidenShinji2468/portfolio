@@ -21,7 +21,7 @@ function Loader()
 	            <span id="halo">
 		        <span id="core"></span>
 		    </span>
-		    <span id="loader-title">GSH... Devs ;)</span>
+		    <span id="loader-title">GSH... Devs</span>
 	        </div>
 	    }
 	</>

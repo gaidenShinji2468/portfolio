@@ -1,10 +1,10 @@
+p#about-me strong {
+    color: red;
+}
+
 @media screen and (min-width: 768px) {
     p#about-me {
         padding: 20px;
 	text-align: center;
-    }
-
-    p#about-me strong {
-        color: red;
     }
 }
